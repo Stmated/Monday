@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{30FBC023-D116-4ACD-A261-FF12173BA273}</ProjectGuid>
+    <ProjectGuid>{9940C448-7058-4308-8260-1778655EF2C4}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>UI</RootNamespace>
-    <AssemblyName>UI</AssemblyName>
+    <RootNamespace>windows.interface</RootNamespace>
+    <AssemblyName>windows.@interface</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -74,6 +74,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\monday.api\monday.api.csproj">
+      <Project>{c1465d40-b093-47e7-a5c9-7a47d832bee5}</Project>
+      <Name>monday.api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\monday.controls\monday.controls.csproj">
+      <Project>{bd772085-d528-4cd7-8c19-d57b03a696b5}</Project>
+      <Name>monday.controls</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
